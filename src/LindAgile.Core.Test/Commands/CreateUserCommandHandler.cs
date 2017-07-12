@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace LindAgile.Core.Test.Commands
 {
+    /// <summary>
+    /// 事件处理程序
+    /// </summary>
     public class CreateUserCommandHandler : IBusHandler<CreateUserCommand>
     {
         public void Handle(CreateUserCommand evt)
