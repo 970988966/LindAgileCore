@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace LindAgile.Core.Test.Commands
 {
+    /// <summary>
+    /// 事件源
+    /// </summary>
     public class CreateUserCommand : BusData
     {
         public string UserName { get; set; }

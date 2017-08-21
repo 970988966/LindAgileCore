@@ -8,6 +8,7 @@ using LindAgile.Core.Modules;
 using LindAgile.Core.Adapter;
 using LindAgile.Core.NoSql;
 using LindAgile.Core.Caching;
+using StackExchange.Redis;
 
 namespace LindAgile.Core.ServiceBus
 {
@@ -21,9 +22,9 @@ namespace LindAgile.Core.ServiceBus
         /// </summary>
         const string ESBKEY = "IoCESBBus";
         /// <summary>
-        /// cache事件字典
+        /// redis事件字典
         /// </summary>
-        ICache cache = ModuleManager.Resolve<ICache>();
+        IDatabase redis = RedisManager.Instance.GetDatabase();
         /// <summary>
         /// 模式锁
         /// </summary>
@@ -63,7 +64,7 @@ namespace LindAgile.Core.ServiceBus
             //redis存储事件与处理程序的映射关系
             foreach (var hash in keyDic)
             {
-                RedisManager.Instance.GetDatabase().HashSet(
+                redis.HashSet(
                     ESBKEY,
                     hash.Key.ToString(),
                     JsonConvert.SerializeObject(hash.Value));
@@ -127,7 +128,7 @@ namespace LindAgile.Core.ServiceBus
         public void Publish<TEvent>(TEvent @event)
            where TEvent : class, IBusData
         {
-            var keyArr = JsonConvert.DeserializeObject<List<string>>(RedisManager.Instance.GetDatabase().HashGet(ESBKEY, typeof(TEvent).Name));
+            var keyArr = JsonConvert.DeserializeObject<List<string>>(redis.HashGet(ESBKEY, typeof(TEvent).Name));
             foreach (var key in keyArr)
             {
                 var item = container.ResolveNamed<IBusHandler<TEvent>>(key);
@@ -193,7 +194,7 @@ namespace LindAgile.Core.ServiceBus
                 }
                 //redis存储事件与处理程序的映射关系
                 foreach (var hash in keyDic)
-                    RedisManager.Instance.GetDatabase().HashSet(
+                    redis.HashSet(
                         ESBKEY,
                         hash.Key.ToString(),
                         JsonConvert.SerializeObject(hash.Value));
