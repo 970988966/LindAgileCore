@@ -1,0 +1,12 @@
+C:\github\LindAgile.Core\LindAgileCore\obj\Debug\netcoreapp2.0\LindAgileCore.csprojResolveAssemblyReference.cache
+C:\github\LindAgile.Core\LindAgileCore\obj\Debug\netcoreapp2.0\LindAgileCore.csproj.CoreCompileInputs.cache
+C:\github\LindAgile.Core\LindAgileCore\obj\Debug\netcoreapp2.0\LindAgileCore.AssemblyInfoInputs.cache
+C:\github\LindAgile.Core\LindAgileCore\obj\Debug\netcoreapp2.0\LindAgileCore.AssemblyInfo.cs
+C:\github\LindAgile.Core\src\LindAgileCore\bin\Debug\netcoreapp2.0\LindAgileCore.deps.json
+C:\github\LindAgile.Core\src\LindAgileCore\bin\Debug\netcoreapp2.0\LindAgileCore.dll
+C:\github\LindAgile.Core\src\LindAgileCore\obj\Debug\netcoreapp2.0\LindAgileCore.csproj.CoreCompileInputs.cache
+C:\github\LindAgile.Core\src\LindAgileCore\obj\Debug\netcoreapp2.0\LindAgileCore.AssemblyInfoInputs.cache
+C:\github\LindAgile.Core\src\LindAgileCore\obj\Debug\netcoreapp2.0\LindAgileCore.AssemblyInfo.cs
+C:\github\LindAgile.Core\src\LindAgileCore\bin\Debug\netcoreapp2.0\LindAgileCore.pdb
+C:\github\LindAgile.Core\src\LindAgileCore\obj\Debug\netcoreapp2.0\LindAgileCore.dll
+C:\github\LindAgile.Core\src\LindAgileCore\obj\Debug\netcoreapp2.0\LindAgileCore.pdb
