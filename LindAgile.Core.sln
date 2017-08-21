@@ -1,25 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-<<<<<<< HEAD
 VisualStudioVersion = 15.0.26730.3
-=======
-VisualStudioVersion = 15.0.26430.13
->>>>>>> 2e3761d39f68ef41a2868687e03f8838dbdda694
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F556D610-643A-424C-888A-E68E497DA37A}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{21A46A7D-9E02-411D-86F4-03250DF6A25C}"
 EndProject
-<<<<<<< HEAD
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LindAgileCore", "src\LindAgileCore\LindAgileCore.csproj", "{9001ADD5-C2D8-4AC7-A765-A2939755A940}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LindAgileCore.Test", "src\LindAgileCore.Test\LindAgileCore.Test.csproj", "{C2E68908-0116-43F4-958E-3DD0E7699475}"
-=======
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LindAgile.Core.Test", "src\LindAgile.Core.Test\LindAgile.Core.Test.csproj", "{8F92C1D2-23A8-4530-8E5D-F30E181B3365}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LindAgile.Core", "src\LindAgile.Core\LindAgile.Core.csproj", "{2740B3F9-7D2E-4879-BF36-BD428C85639A}"
->>>>>>> 2e3761d39f68ef41a2868687e03f8838dbdda694
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LindAgileCore.Test", "src\LindAgileCore.Test\LindAgileCore.Test.csproj", "{C2E68908-0116-43F4-958E-3DD0E7699475}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
